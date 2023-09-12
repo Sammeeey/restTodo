@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+    
+<body>
+    <%- include('../partials/nav') %>
+    <h1>New ToDo</h1>
+    <form action="/todos" method="post">
+        <input type="text" name="todo" id="todo" placeholder="todo">
+        <textarea name="details" id="details" cols="30" rows="10" placeholder="details"></textarea>
+        <input type="checkbox" name="done" id="done">
+        <button type="submit">Create new Todo</button>
+    </form>
+</body>
+
+<%- include('../partials/footer') %>
+
+</html>

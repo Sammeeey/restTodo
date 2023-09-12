@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+    
+<body>
+    <%- include('../partials/nav') %>
+    <h1>Edit ToDo: <%= todoEntry.todo %></h1>
+    <form action="/todos/<%= todoEntry.id %>?_method=PATCH" method="post">
+        <input type="text" name="todo" id="todo" value="<%= todoEntry.todo %>">
+        <textarea name="details" id="details" cols="30" rows="10"><%= todoEntry.details %></textarea>
+        <input type="checkbox" name="done" id="done" <%= todoEntry.done ? 'checked' : '' %>>
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+
+<%- include('../partials/footer') %>
+
+</html>

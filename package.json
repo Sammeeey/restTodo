@@ -1,0 +1,17 @@
+{
+  "name": "resttodo",
+  "version": "1.0.0",
+  "description": "- [inspired by RESTful comments tutorial by Colt Steele (paid)](https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/22117132) & [respective result](https://github.com/Sammeeey/restComments)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "uuid": "^9.0.1"
+  }
+}

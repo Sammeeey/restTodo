@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+    
+<body>
+    <%- include('../partials/nav') %>
+    <h1>ToDo's</h1>
+    <% for (entry of db) { %>
+        <a href="/todos/<%= entry.id %>">
+            <div class="todo-container">
+                <span class="todo"><%= entry.todo %></span>
+                <form action="/todos/<%= entry.id %>?_method=DELETE" method="post">
+                    <button class="delete-button">&times;</button>
+                </form>
+                <form action="/todos/<%= entry.id %>/edit">
+                    <button class="edit-todo">Edit</button>
+                </form>
+            </div>
+        </a>
+    <% } %>
+</body>
+
+<%- include('../partials/footer') %>
+
+</html>

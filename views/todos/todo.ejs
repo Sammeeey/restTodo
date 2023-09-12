@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+    
+<body>
+    <%- include('../partials/nav') %>
+    <h1>ToDo: <%= todoEntry.todo %> - done? <%= todoEntry.done %></h1>
+    <p class="todo-details"><%= todoEntry.details %></p>
+</body>
+
+<%- include('../partials/footer') %>
+
+</html>
